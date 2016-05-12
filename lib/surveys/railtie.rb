@@ -8,8 +8,7 @@ module Surveys
     config.after_initialize do
       FeatureBase.inject_feature_record("Surveys",
         "Surveys",
-        "This will give the site the ability create Surveys.",
-        ["Surveys"]
+        "This will give the site the ability create Surveys."
       )
       FeatureBase.inject_permission_records(
         Surveys,
